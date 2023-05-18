@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FF_JK is
+	port(j, k, clk : in std_logic;
+		  q :buffer std_logic);	-- usamos buffer para fazer a leitura desse pino
+end FF_JK;
+
+architecture arc_FF_JK of FF_JK is
+begin
+	process(j,k,clk)
+	begin
+		if clk'event and clk = '1' then
+			if j = '0' and k = '1' then
+				q <= '0';
+			elsif j = '1' and k = '0' then
+				q <= '1';
+			elsif j = '1' and k = '1' then
+				q <= not q; --para fazer essa leitura q tem que ser declarado como buffer na entity
+			end if;
+			-- se j = '0' e k = '0' entao q nao muda
+		end if;
+	end process;
+end ARC_FF_JK;

@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/thiago/VHDL/Flip-FlopD/FF_tipoD.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopD/FF_tipoD_Assicrono.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopD/FF_tipoD_Sicrono.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopD/db/FF_tipoD.cbx.xml
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FF_tipoD_Assicrono
+instance = comp, \clk~I\, clk, FF_tipoD_Assicrono, 1
+instance = comp, \d~I\, d, FF_tipoD_Assicrono, 1
+instance = comp, \reset~I\, reset, FF_tipoD_Assicrono, 1
+instance = comp, \q~reg0\, q~reg0, FF_tipoD_Assicrono, 1
+instance = comp, \q~I\, q, FF_tipoD_Assicrono, 1

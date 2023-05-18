@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/thiago/VHDL/Flip-FlopJK/FF_JK.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopJK/db/FF_JK.cbx.xml
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FF_JK
+instance = comp, \clk~I\, clk, FF_JK, 1
+instance = comp, \k~I\, k, FF_JK, 1
+instance = comp, \j~I\, j, FF_JK, 1
+instance = comp, \q~0\, q~0, FF_JK, 1
+instance = comp, \q~reg0\, q~reg0, FF_JK, 1
+instance = comp, \q~I\, q, FF_JK, 1

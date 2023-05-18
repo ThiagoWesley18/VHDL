@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity somador4bit is
+	port(	cin: in std_logic;
+		  a,b : in std_logic_vector(3 downto 0);
+		    s : out std_logic_vector(3 downto 0);
+		  cout: out std_logic);
+end somador4bit;
+
+architecture arc_somador4bit of somador4bit is
+begin
+	process(a,b,cin)
+	variable soma: std_logic_vector(3 downto 0);
+	variable c: std_logic;
+	begin
+		c := cin;
+		for i in 0 to 3 loop
+			soma(i) := a(i) xor b(i) xor c;
+			c := (a(i) and b(1)) or (a(i) and c) or (b(i) and c);
+		end loop;
+		s <= soma;
+		cout <= c;
+	end process;
+end arc_somador4bit;

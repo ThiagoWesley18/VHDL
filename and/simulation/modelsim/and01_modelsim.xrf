@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, /home/thiago/VHDL/and/and01.vhd
+source_file = 1, /home/thiago/VHDL/and/Waveform.vwf
+source_file = 1, /home/thiago/VHDL/and/db/and01.cbx.xml
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = and01
+instance = comp, \a~I , a, and01, 1
+instance = comp, \b~I , b, and01, 1
+instance = comp, \y~0 , y~0, and01, 1
+instance = comp, \y~I , y, and01, 1

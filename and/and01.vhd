@@ -1,0 +1,14 @@
+library ieee;
+
+
+entity and01 is
+	port(a,b: in bit;
+		  y  : out bit);
+end and01;
+
+architecture arq_and01 of and01 is
+
+begin
+	y <= a and b;
+	
+end arq_and01;

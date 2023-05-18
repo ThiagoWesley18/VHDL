@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+--Registrador serial
+entity regSerial8bits is
+	port(din: in std_logic_vector(7 downto 0);
+		  clk, load : in std_logic;
+		  dout: out std_logic_vector(7 downto 0));
+end regSerial8bits;
+
+architecture arc_regSerial8bits of regSerial8bits is
+begin
+	process(clk)
+	variable aux : std_logic_vector(7 downto 0);
+	begin
+		if clk'event and clk = '1' then
+			if load = '1' then
+				dout <= din;
+				aux := din;
+			else
+				for i in 7 downto 1 loop
+					aux(i) := aux(i-1);
+				end loop;
+				aux(0) := '0';
+				dout <= aux;
+			end if;
+		end if;
+	end process;
+end arc_regSerial8bits;

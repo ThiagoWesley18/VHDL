@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/thiago/VHDL/Flip-FlopSR/FF_SR.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopSR/db/FF_SR.cbx.xml
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FF_SR
+instance = comp, \clk~I\, clk, FF_SR, 1
+instance = comp, \set~I\, set, FF_SR, 1
+instance = comp, \reset~I\, reset, FF_SR, 1
+instance = comp, \q~0\, q~0, FF_SR, 1
+instance = comp, \q~reg0\, q~reg0, FF_SR, 1
+instance = comp, \q~I\, q, FF_SR, 1

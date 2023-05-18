@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/thiago/VHDL/Flip-FlopT/FF_tipoT.vhd
+source_file = 1, /home/thiago/VHDL/Flip-FlopT/db/Waveform.vwf
+source_file = 1, /home/thiago/VHDL/Flip-FlopT/db/Waveform1.vwf
+source_file = 1, /home/thiago/VHDL/Flip-FlopT/db/Flip-Flop_tipoT.cbx.xml
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FF_tipoT
+instance = comp, \clk~I\, clk, FF_tipoT, 1
+instance = comp, \q~I\, q, FF_tipoT, 1
